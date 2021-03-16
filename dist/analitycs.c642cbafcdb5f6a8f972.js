@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/analitycs.js":
-/*!**************************!*\
-  !*** ./src/analitycs.js ***!
-  \**************************/
+/***/ "./analitycs.js":
+/*!**********************!*\
+  !*** ./analitycs.js ***!
+  \**********************/
 /***/ (() => {
 
-eval("function createAnalitycs() {\r\n    let counter = 0;\r\n    let listener = () => {\r\n        counter++\r\n    }\r\n    let clicker = () => {\r\n        console.log(\"clicker\")\r\n    }\r\n    let isDestroyed = false;\r\n    document.addEventListener(\"click\", listener);\r\n    document.addEventListener(\"click\", clicker);\r\n\r\n    return {\r\n        destroy(){\r\n            document.removeEventListener(\"click\", listener);\r\n            isDestroyed = true;\r\n        },\r\n        getClicks(){\r\n            return isDestroyed ? \"Destroyd\" : counter;\r\n\r\n        }\r\n    }\r\n}\r\n\r\nwindow.analitics = createAnalitycs();\r\n\n\n//# sourceURL=webpack://webpack-study/./src/analitycs.js?");
+eval("function createAnalitycs() {\r\n    let counter = 0;\r\n    let listener = () => {\r\n        counter++\r\n    }\r\n    let clicker = () => {\r\n        console.log(\"clicker\")\r\n    }\r\n    let isDestroyed = false;\r\n    document.addEventListener(\"click\", listener);\r\n    document.addEventListener(\"click\", clicker);\r\n\r\n    return {\r\n        destroy(){\r\n            document.removeEventListener(\"click\", listener);\r\n            isDestroyed = true;\r\n        },\r\n        getClicks(){\r\n            return isDestroyed ? \"Destroid\" : counter;\r\n\r\n        }\r\n    }\r\n}\r\n\r\nwindow.analitics = createAnalitycs();\r\n\n\n//# sourceURL=webpack:///./analitycs.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("function createAnalitycs() {\r\n    let counter = 0;\r\n    let listener =
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/analitycs.js"]();
+/******/ 	__webpack_modules__["./analitycs.js"]();
 /******/ 	
 /******/ })()
 ;

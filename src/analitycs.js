@@ -16,7 +16,7 @@ function createAnalitycs() {
             isDestroyed = true;
         },
         getClicks(){
-            return isDestroyed ? "Destroyd" : counter;
+            return isDestroyed ? "Destroid" : counter;
 
         }
     }

@@ -1,0 +1,7 @@
+$red:#f00;
+$green: lighten(black, 50%);
+
+*{
+  color: $red;
+  background: $green;
+}
