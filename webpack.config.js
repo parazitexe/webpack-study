@@ -25,6 +25,12 @@ module.exports  = {
         rules: [
             {test: /\.scss$/,
                 use:['style-loader', 'css-loader', 'sass-loader']
+            },
+            {test: /\.(jpg|png|svg|gif)$/,
+                use:['file-loader']
+            },
+            {test: /\.(ttf|woff|woff2|eot)$/,
+                use:['file-loader']
             }
         ]
     }
