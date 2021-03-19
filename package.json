@@ -34,6 +34,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "csv-loader": "^3.0.3"
+    "csv-loader": "^3.0.3",
+    "jquery": "^3.6.0"
   }
 }

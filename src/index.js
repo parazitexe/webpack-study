@@ -1,6 +1,7 @@
 import Post from "./post";
 const post = new Post("Filin");
 
+import $ from "jquery";
 import logo from "./assets/kkf.jpg";
 
 import "./styles/styles.scss"
@@ -18,6 +19,7 @@ setTimeout(()=>{
 document.getElementById('img').setAttribute('src', img)
 
 console.log(post.toString());
+console.log($("#img"));
 
 console.log("json - ",json);
 console.log("img - ",img);
