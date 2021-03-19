@@ -27,10 +27,22 @@ module.exports  = {
                 use:['style-loader', 'css-loader', 'sass-loader']
             },
             {test: /\.(jpg|png|svg|gif)$/,
-                use:['file-loader']
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                },
             },
             {test: /\.(ttf|woff|woff2|eot)$/,
-                use:['file-loader']
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                },
+            },
+            {test: /\.(csv)$/,
+                loader: 'csv-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                },
             }
         ]
     }
